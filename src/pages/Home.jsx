@@ -7,8 +7,7 @@ function Home() {
       <section className="hero">
         <h1>Agende sua consulta em poucos cliques</h1>
         <p>
-          O Clique Saúde conecta você a médicos especialistas com agendamento 100% online — evoluído
-          agora para uma SPA em React, consumindo a mesma API REST do backend Flask.
+          O Clique Saúde conecta você a médicos especialistas com agendamento 100% online.
         </p>
         <div className="hero__acoes">
           <Link className="botao botao--primario" to="/agendar">
