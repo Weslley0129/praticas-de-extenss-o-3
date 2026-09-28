@@ -21,8 +21,14 @@ jobs:
           node-version: "20"
           cache: "npm"
 
+      # "npm install" em vez de "npm ci": o lockfile foi gerado no Windows, e
+      # há um bug conhecido do npm em que dependências opcionais específicas
+      # de plataforma (o binário nativo do Rollup para Linux, usado pelo
+      # Vite) não ficam registradas corretamente para outros SOs — "npm ci"
+      # falha ao tentar carregar esse binário no runner Ubuntu. "npm install"
+      # resolve as dependências opcionais certas para a plataforma atual.
       - name: Instalar dependências
-        run: npm ci
+        run: npm install
 
       - name: Rodar testes de componentes com cobertura
         run: npm run test:coverage
@@ -51,7 +57,7 @@ jobs:
           cache: "npm"
 
       - name: Instalar dependências
-        run: npm ci
+        run: npm install
 
       - name: Build de produção
         run: npm run build
