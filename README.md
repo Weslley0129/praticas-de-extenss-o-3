@@ -126,10 +126,39 @@ da suíte.
 Arquivo: [`.github/workflows/ci.yml`](.github/workflows/ci.yml). Roda a cada
 push/PR para `main`, em 3 jobs encadeados:
 
-1. **test** — `npm ci`, roda `npm run test:coverage` e publica a pasta
+1. **test** — `npm install`, roda `npm run test:coverage` e publica a pasta
    `coverage/` como artefato do workflow.
 2. **build** — `npm run build` (Vite) e publica `dist/` como artefato.
 3. **deploy** (opcional, **desativado por padrão** — `if: false`) — dispara
    um deploy hook (ex: Vercel/Netlify) usando um secret do repositório. Para
    ativar: configure `VERCEL_DEPLOY_HOOK_URL` nos secrets do GitHub e troque
    a condição do job para `if: github.ref == 'refs/heads/main'`.
+
+### Um bug real de infraestrutura, encontrado e corrigido
+
+O pipeline não funcionou de primeira — e o processo de depurar isso é, em si,
+parte do que esta atividade pede ("qualidade de software"). Registro aqui
+porque é um problema real que qualquer projeto com Vite 8 pode encontrar:
+
+1. **Sintoma**: os testes passavam sempre localmente, mas o job `test` no
+   GitHub Actions (runner `ubuntu-latest`) falhava em ~2 segundos — rápido
+   demais para ter rodado as 28 suítes de verdade, sinal de crash na
+   inicialização, não de um teste que falhou de fato.
+2. **Hipóteses testadas e descartadas**: `npm ci` vs `npm install`
+   (bug clássico de `optionalDependencies` entre plataformas — não era isso,
+   `npm install` sozinho não resolveu); cache do npm "contaminado" (removido,
+   não resolveu).
+3. **Causa raiz**: o Vite 8 usa por baixo dos panos o **Rolldown** (bundler
+   em Rust, ainda em amadurecimento). O pacote nativo
+   `@rolldown/binding-linux-x64-gnu` declara `"engines": {"node": "^20.19.0
+   || >=22.12.0"}` — e o Node 20 disponível no runner `ubuntu-latest` estava
+   abaixo desse mínimo. O binário nativo falhava ao carregar, derrubando o
+   Vitest antes de qualquer teste rodar.
+4. **Correção**: trocar `node-version: "20"` por `"22"` no workflow. Depois
+   da troca, o job passou a rodar de verdade (7s, todos os 28 testes).
+5. **Bônus de robustez**: mesmo localmente (Windows), rodar a suíte completa
+   com cobertura falhava de forma intermitente (~40% das vezes) com panics
+   nativos do Rolldown ("out of memory") sob paralelismo. Configurei o
+   Vitest para rodar em processo único (`pool: "forks"`,
+   `singleFork: true`, em `vitest.config.js`) — mais lento, mas eliminou a
+   instabilidade, tanto localmente quanto no CI.

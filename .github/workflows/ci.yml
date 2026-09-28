@@ -15,6 +15,10 @@ jobs:
       - name: Baixar o código
         uses: actions/checkout@v4
 
+      # Node 22 (não 20): o binário nativo do Rolldown usado pelo Vite 8
+      # exige Node ^20.19 ou >=22.12 — o Node 20 do runner ubuntu-latest
+      # ficou abaixo desse mínimo e o bundler falhava ao carregar. Ver
+      # README, seção "CI/CD", para o diagnóstico completo.
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
@@ -24,18 +28,7 @@ jobs:
         run: npm install
 
       - name: Rodar testes de componentes com cobertura
-        run: |
-          set +e
-          npm run test:coverage > vitest_output.txt 2>&1
-          CODIGO_SAIDA=$?
-          {
-            echo "### Saída de \`npm run test:coverage\`"
-            echo '```'
-            cat vitest_output.txt
-            echo '```'
-            echo "Código de saída: $CODIGO_SAIDA"
-          } >> "$GITHUB_STEP_SUMMARY"
-          exit $CODIGO_SAIDA
+        run: npm run test:coverage
 
       - name: Publicar relatório de cobertura como artefato
         if: always()
