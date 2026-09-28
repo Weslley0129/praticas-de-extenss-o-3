@@ -148,6 +148,16 @@ table.tabela td {
   gap: 8px;
 }
 
+.agendar__dica-dias {
+  margin: -6px 0 4px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: var(--info-bg);
+  color: var(--accent-strong);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
 .chip-opcao {
   font-size: 0.85rem;
   font-weight: 600;

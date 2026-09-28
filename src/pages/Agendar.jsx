@@ -186,6 +186,16 @@ function Agendar() {
       {passo === 3 && (
         <section className="cartao">
           <h2>3. Data e horário — {medico?.nome}</h2>
+
+          {horariosFixos.length > 0 && (
+            <p className="agendar__dica-dias">
+              Esse médico atende: {" "}
+              {horariosFixos
+                .map((h) => `${h.dia_semana} às ${h.horario}`)
+                .join(" · ")}
+            </p>
+          )}
+
           <div className="campo">
             <label htmlFor="data">Data</label>
             <input
@@ -206,7 +216,10 @@ function Agendar() {
           {data && !ehFimDeSemana(data) && (
             <div className="chip-opcoes">
               {horariosDoDia.length === 0 ? (
-                <p>Nenhum horário livre nesse dia para este médico.</p>
+                <p>
+                  Nenhum horário livre nesse dia para este médico. Escolha uma das datas
+                  listadas acima em "Esse médico atende".
+                </p>
               ) : (
                 horariosDoDia.map((h) => (
                   <button
