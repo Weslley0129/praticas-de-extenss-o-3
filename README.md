@@ -26,15 +26,23 @@ Isso sobe dois processos ao mesmo tempo:
 - Paciente: `paciente@cliquesaude.com` / `123456`
 - Admin: `admin@cliquesaude.com` / `admin123`
 
-## Por que um json-server, e não o Flask real?
+## Por que um json-server, e não a API real?
 
 Esta atividade é focada em **front-end**. Em vez de simplesmente mockar dados
-localmente, o `db.json` replica exatamente o schema documentado do backend
-real (tabelas `usuarios`, `medicos`, `horarios_disponiveis`, `consultas`), e
-`src/services/clinicaApi.js` chama os mesmos endpoints REST documentados
-(`/api/medicos`, `/api/agendar`, `/api/cancelar_consulta/:id`...). Isso
-significa que trocar o `BASE_URL` do serviço pela URL do Flask em produção é
-o único passo necessário para a fase final do roadmap (ver relatório, Fase 6).
+localmente, o `db.json` replica exatamente o schema do back-end real
+(tabelas `usuarios`, `medicos`, `horarios_disponiveis`, `consultas`), e
+`src/services/clinicaApi.js` chama os mesmos endpoints REST que a API real
+expõe. Isso significa que trocar o `BASE_URL` do serviço pela URL da API em
+produção é o único passo necessário para a fase final do roadmap (ver
+relatório, Fase 6).
+
+A documentação completa dos endpoints (parâmetros, exemplos, códigos de
+status) **não vive aqui** — para manter front-end e back-end desacoplados,
+ela é 100% do back-end real:
+
+- Interativa (Swagger/OpenAPI): `http://localhost:3333/api-docs`, com o
+  back-end rodando ([clique-saude-api](https://github.com/Weslley0129/atividade-pratica-de-extenss-o-2)).
+- Documentação técnica completa do projeto: [atividade-final-praticas-de-extens-o](https://github.com/Weslley0129/atividade-final-praticas-de-extens-o).
 
 ## Estrutura
 

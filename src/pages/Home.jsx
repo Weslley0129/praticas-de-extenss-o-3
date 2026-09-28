@@ -22,7 +22,7 @@ function Home() {
       <div className="grid-2">
         <StatCard rotulo="Especialidades" valor="6" />
         <StatCard rotulo="Médicos cadastrados" valor="6" />
-        <StatCard rotulo="Horários por semana" valor="10" />
+        <StatCard rotulo="Horários por semana (por médico)" valor="40" />
         <StatCard rotulo="Disponibilidade" valor="24/7" />
       </div>
     </div>
