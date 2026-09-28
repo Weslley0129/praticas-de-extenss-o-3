@@ -1,0 +1,65 @@
+.medico-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+
+.medico-card__avatar {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--info-bg);
+  color: var(--accent-strong);
+  font-weight: 700;
+  font-family: "Sora", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.medico-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+}
+
+.medico-card__info h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.medico-card__especialidade {
+  font-size: 0.8rem;
+  color: var(--accent-strong);
+  font-weight: 600;
+}
+
+.medico-card__crm {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.medico-card__acoes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.medico-card__preco {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 600;
+}
+
+.medico-card__link {
+  font-size: 0.82rem;
+  white-space: nowrap;
+}

@@ -1,0 +1,51 @@
+.botao {
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 9px 16px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.botao:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.botao--primario {
+  background: var(--accent);
+  color: var(--accent-contrast);
+}
+
+.botao--primario:hover:not(:disabled) {
+  background: var(--accent-strong);
+}
+
+.botao--secundario {
+  background: var(--surface-alt);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+.botao--secundario:hover:not(:disabled) {
+  border-color: var(--accent);
+}
+
+.botao--perigo {
+  background: var(--danger-bg);
+  border-color: var(--danger-border);
+  color: var(--danger);
+}
+
+.botao--perigo:hover:not(:disabled) {
+  background: var(--danger-border);
+}
+
+.botao--link {
+  background: none;
+  color: var(--accent-strong);
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
