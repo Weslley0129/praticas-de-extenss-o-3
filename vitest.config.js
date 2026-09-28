@@ -8,6 +8,18 @@ export default defineConfig({
     setupFiles: ["./tests/setupTests.js"],
     globals: true,
     css: false,
+    // Vite 8 usa o Rolldown (bundler em Rust) por baixo do capô, que ainda
+    // apresenta crashes nativos ("out of memory"/panic) quando vários
+    // workers sobem em paralelo para transformar os arquivos de teste.
+    // Rodar num único processo (sequencial) evita essa pressão de memória —
+    // mais lento, porém estável (mesma estratégia usada no backend com
+    // "jest --runInBand").
+    pool: "forks",
+    poolOptions: {
+      forks: {
+        singleFork: true,
+      },
+    },
     coverage: {
       provider: "v8",
       reporter: ["text", "text-summary", "lcov", "html"],
