@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import LogoClinica from "./LogoClinica";
 import "./Navbar.css";
 
 const LINKS = [
@@ -26,7 +27,8 @@ function Navbar() {
   return (
     <header className="navbar">
       <div className="navbar__marca">
-        <span aria-hidden="true">✚</span> Clique Saúde
+        <LogoClinica tamanho={30} />
+        Clique Saúde
       </div>
 
       <button

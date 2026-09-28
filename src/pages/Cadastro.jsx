@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import Botao from "../components/Botao";
+import { Link, useNavigate } from "react-router-dom";
+import LogoClinica from "../components/LogoClinica";
 import EstadoCarregamento from "../components/EstadoCarregamento";
 import { cadastrarPaciente } from "../services/clinicaApi";
+import "./Login.css";
 
 const ESTADO_INICIAL = { nome: "", email: "", senha: "" };
 
@@ -32,29 +33,41 @@ function Cadastro() {
   };
 
   return (
-    <div className="pagina">
-      <div className="pagina__cabecalho">
-        <h1>Criar conta</h1>
-        <p>Leva menos de 2 minutos.</p>
+    <div className="tela-login">
+      <div className="tela-login__marca">
+        <LogoClinica tamanho={64} />
+        <div className="tela-login__titulo">Clique Saúde</div>
       </div>
+      <p className="tela-login__subtitulo">Criar minha conta</p>
 
-      <form className="formulario cartao" onSubmit={enviar}>
+      <span className="tela-login__pill">CADASTRE-SE</span>
+
+      <form className="tela-login__form" onSubmit={enviar}>
         {erro && <EstadoCarregamento tipo="erro" mensagem={erro} />}
 
-        <div className="campo">
-          <label htmlFor="nome">Nome completo</label>
-          <input id="nome" name="nome" value={form.nome} onChange={atualizarCampo} required />
+        <div className="tela-login__campo">
+          <label htmlFor="nome">Nome</label>
+          <input id="nome" name="nome" placeholder="Nome completo" value={form.nome} onChange={atualizarCampo} required />
         </div>
-        <div className="campo">
+        <div className="tela-login__campo">
           <label htmlFor="email">E-mail</label>
-          <input id="email" name="email" type="email" value={form.email} onChange={atualizarCampo} required />
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="e-mail"
+            value={form.email}
+            onChange={atualizarCampo}
+            required
+          />
         </div>
-        <div className="campo">
+        <div className="tela-login__campo">
           <label htmlFor="senha">Senha</label>
           <input
             id="senha"
             name="senha"
             type="password"
+            placeholder="mín. 6 caracteres"
             minLength={6}
             value={form.senha}
             onChange={atualizarCampo}
@@ -62,9 +75,13 @@ function Cadastro() {
           />
         </div>
 
-        <Botao tipo="submit" disabled={enviando}>
-          {enviando ? "Criando..." : "Criar conta"}
-        </Botao>
+        <button type="submit" className="tela-login__entrar" disabled={enviando}>
+          {enviando ? "Criando..." : "CRIAR CONTA"}
+        </button>
+
+        <p className="tela-login__cadastro">
+          Já tem conta? <Link to="/login">Entrar</Link>
+        </p>
       </form>
     </div>
   );
