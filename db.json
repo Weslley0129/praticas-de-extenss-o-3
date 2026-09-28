@@ -75,50 +75,1430 @@
     {
       "id": 3,
       "medico_id": 1,
+      "dia_semana": "Segunda",
+      "horario": "10:00"
+    },
+    {
+      "id": 4,
+      "medico_id": 1,
+      "dia_semana": "Segunda",
+      "horario": "11:00"
+    },
+    {
+      "id": 5,
+      "medico_id": 1,
+      "dia_semana": "Segunda",
+      "horario": "14:00"
+    },
+    {
+      "id": 6,
+      "medico_id": 1,
+      "dia_semana": "Segunda",
+      "horario": "15:00"
+    },
+    {
+      "id": 7,
+      "medico_id": 1,
+      "dia_semana": "Segunda",
+      "horario": "16:00"
+    },
+    {
+      "id": 8,
+      "medico_id": 1,
+      "dia_semana": "Segunda",
+      "horario": "17:00"
+    },
+    {
+      "id": 9,
+      "medico_id": 1,
+      "dia_semana": "Terça",
+      "horario": "08:00"
+    },
+    {
+      "id": 10,
+      "medico_id": 1,
+      "dia_semana": "Terça",
+      "horario": "09:00"
+    },
+    {
+      "id": 11,
+      "medico_id": 1,
+      "dia_semana": "Terça",
+      "horario": "10:00"
+    },
+    {
+      "id": 12,
+      "medico_id": 1,
+      "dia_semana": "Terça",
+      "horario": "11:00"
+    },
+    {
+      "id": 13,
+      "medico_id": 1,
       "dia_semana": "Terça",
       "horario": "14:00"
     },
     {
-      "id": 4,
+      "id": 14,
+      "medico_id": 1,
+      "dia_semana": "Terça",
+      "horario": "15:00"
+    },
+    {
+      "id": 15,
+      "medico_id": 1,
+      "dia_semana": "Terça",
+      "horario": "16:00"
+    },
+    {
+      "id": 16,
+      "medico_id": 1,
+      "dia_semana": "Terça",
+      "horario": "17:00"
+    },
+    {
+      "id": 17,
+      "medico_id": 1,
+      "dia_semana": "Quarta",
+      "horario": "08:00"
+    },
+    {
+      "id": 18,
+      "medico_id": 1,
+      "dia_semana": "Quarta",
+      "horario": "09:00"
+    },
+    {
+      "id": 19,
+      "medico_id": 1,
+      "dia_semana": "Quarta",
+      "horario": "10:00"
+    },
+    {
+      "id": 20,
+      "medico_id": 1,
+      "dia_semana": "Quarta",
+      "horario": "11:00"
+    },
+    {
+      "id": 21,
+      "medico_id": 1,
+      "dia_semana": "Quarta",
+      "horario": "14:00"
+    },
+    {
+      "id": 22,
+      "medico_id": 1,
+      "dia_semana": "Quarta",
+      "horario": "15:00"
+    },
+    {
+      "id": 23,
+      "medico_id": 1,
+      "dia_semana": "Quarta",
+      "horario": "16:00"
+    },
+    {
+      "id": 24,
+      "medico_id": 1,
+      "dia_semana": "Quarta",
+      "horario": "17:00"
+    },
+    {
+      "id": 25,
+      "medico_id": 1,
+      "dia_semana": "Quinta",
+      "horario": "08:00"
+    },
+    {
+      "id": 26,
+      "medico_id": 1,
+      "dia_semana": "Quinta",
+      "horario": "09:00"
+    },
+    {
+      "id": 27,
+      "medico_id": 1,
+      "dia_semana": "Quinta",
+      "horario": "10:00"
+    },
+    {
+      "id": 28,
+      "medico_id": 1,
+      "dia_semana": "Quinta",
+      "horario": "11:00"
+    },
+    {
+      "id": 29,
+      "medico_id": 1,
+      "dia_semana": "Quinta",
+      "horario": "14:00"
+    },
+    {
+      "id": 30,
+      "medico_id": 1,
+      "dia_semana": "Quinta",
+      "horario": "15:00"
+    },
+    {
+      "id": 31,
+      "medico_id": 1,
+      "dia_semana": "Quinta",
+      "horario": "16:00"
+    },
+    {
+      "id": 32,
+      "medico_id": 1,
+      "dia_semana": "Quinta",
+      "horario": "17:00"
+    },
+    {
+      "id": 33,
+      "medico_id": 1,
+      "dia_semana": "Sexta",
+      "horario": "08:00"
+    },
+    {
+      "id": 34,
+      "medico_id": 1,
+      "dia_semana": "Sexta",
+      "horario": "09:00"
+    },
+    {
+      "id": 35,
+      "medico_id": 1,
+      "dia_semana": "Sexta",
+      "horario": "10:00"
+    },
+    {
+      "id": 36,
+      "medico_id": 1,
+      "dia_semana": "Sexta",
+      "horario": "11:00"
+    },
+    {
+      "id": 37,
+      "medico_id": 1,
+      "dia_semana": "Sexta",
+      "horario": "14:00"
+    },
+    {
+      "id": 38,
+      "medico_id": 1,
+      "dia_semana": "Sexta",
+      "horario": "15:00"
+    },
+    {
+      "id": 39,
+      "medico_id": 1,
+      "dia_semana": "Sexta",
+      "horario": "16:00"
+    },
+    {
+      "id": 40,
+      "medico_id": 1,
+      "dia_semana": "Sexta",
+      "horario": "17:00"
+    },
+    {
+      "id": 41,
+      "medico_id": 2,
+      "dia_semana": "Segunda",
+      "horario": "08:00"
+    },
+    {
+      "id": 42,
+      "medico_id": 2,
+      "dia_semana": "Segunda",
+      "horario": "09:00"
+    },
+    {
+      "id": 43,
       "medico_id": 2,
       "dia_semana": "Segunda",
       "horario": "10:00"
     },
     {
-      "id": 5,
+      "id": 44,
+      "medico_id": 2,
+      "dia_semana": "Segunda",
+      "horario": "11:00"
+    },
+    {
+      "id": 45,
+      "medico_id": 2,
+      "dia_semana": "Segunda",
+      "horario": "14:00"
+    },
+    {
+      "id": 46,
+      "medico_id": 2,
+      "dia_semana": "Segunda",
+      "horario": "15:00"
+    },
+    {
+      "id": 47,
+      "medico_id": 2,
+      "dia_semana": "Segunda",
+      "horario": "16:00"
+    },
+    {
+      "id": 48,
+      "medico_id": 2,
+      "dia_semana": "Segunda",
+      "horario": "17:00"
+    },
+    {
+      "id": 49,
+      "medico_id": 2,
+      "dia_semana": "Terça",
+      "horario": "08:00"
+    },
+    {
+      "id": 50,
+      "medico_id": 2,
+      "dia_semana": "Terça",
+      "horario": "09:00"
+    },
+    {
+      "id": 51,
+      "medico_id": 2,
+      "dia_semana": "Terça",
+      "horario": "10:00"
+    },
+    {
+      "id": 52,
+      "medico_id": 2,
+      "dia_semana": "Terça",
+      "horario": "11:00"
+    },
+    {
+      "id": 53,
+      "medico_id": 2,
+      "dia_semana": "Terça",
+      "horario": "14:00"
+    },
+    {
+      "id": 54,
+      "medico_id": 2,
+      "dia_semana": "Terça",
+      "horario": "15:00"
+    },
+    {
+      "id": 55,
+      "medico_id": 2,
+      "dia_semana": "Terça",
+      "horario": "16:00"
+    },
+    {
+      "id": 56,
+      "medico_id": 2,
+      "dia_semana": "Terça",
+      "horario": "17:00"
+    },
+    {
+      "id": 57,
+      "medico_id": 2,
+      "dia_semana": "Quarta",
+      "horario": "08:00"
+    },
+    {
+      "id": 58,
+      "medico_id": 2,
+      "dia_semana": "Quarta",
+      "horario": "09:00"
+    },
+    {
+      "id": 59,
+      "medico_id": 2,
+      "dia_semana": "Quarta",
+      "horario": "10:00"
+    },
+    {
+      "id": 60,
+      "medico_id": 2,
+      "dia_semana": "Quarta",
+      "horario": "11:00"
+    },
+    {
+      "id": 61,
+      "medico_id": 2,
+      "dia_semana": "Quarta",
+      "horario": "14:00"
+    },
+    {
+      "id": 62,
       "medico_id": 2,
       "dia_semana": "Quarta",
       "horario": "15:00"
     },
     {
-      "id": 6,
+      "id": 63,
+      "medico_id": 2,
+      "dia_semana": "Quarta",
+      "horario": "16:00"
+    },
+    {
+      "id": 64,
+      "medico_id": 2,
+      "dia_semana": "Quarta",
+      "horario": "17:00"
+    },
+    {
+      "id": 65,
+      "medico_id": 2,
+      "dia_semana": "Quinta",
+      "horario": "08:00"
+    },
+    {
+      "id": 66,
+      "medico_id": 2,
+      "dia_semana": "Quinta",
+      "horario": "09:00"
+    },
+    {
+      "id": 67,
+      "medico_id": 2,
+      "dia_semana": "Quinta",
+      "horario": "10:00"
+    },
+    {
+      "id": 68,
+      "medico_id": 2,
+      "dia_semana": "Quinta",
+      "horario": "11:00"
+    },
+    {
+      "id": 69,
+      "medico_id": 2,
+      "dia_semana": "Quinta",
+      "horario": "14:00"
+    },
+    {
+      "id": 70,
+      "medico_id": 2,
+      "dia_semana": "Quinta",
+      "horario": "15:00"
+    },
+    {
+      "id": 71,
+      "medico_id": 2,
+      "dia_semana": "Quinta",
+      "horario": "16:00"
+    },
+    {
+      "id": 72,
+      "medico_id": 2,
+      "dia_semana": "Quinta",
+      "horario": "17:00"
+    },
+    {
+      "id": 73,
+      "medico_id": 2,
+      "dia_semana": "Sexta",
+      "horario": "08:00"
+    },
+    {
+      "id": 74,
+      "medico_id": 2,
+      "dia_semana": "Sexta",
+      "horario": "09:00"
+    },
+    {
+      "id": 75,
+      "medico_id": 2,
+      "dia_semana": "Sexta",
+      "horario": "10:00"
+    },
+    {
+      "id": 76,
+      "medico_id": 2,
+      "dia_semana": "Sexta",
+      "horario": "11:00"
+    },
+    {
+      "id": 77,
+      "medico_id": 2,
+      "dia_semana": "Sexta",
+      "horario": "14:00"
+    },
+    {
+      "id": 78,
+      "medico_id": 2,
+      "dia_semana": "Sexta",
+      "horario": "15:00"
+    },
+    {
+      "id": 79,
+      "medico_id": 2,
+      "dia_semana": "Sexta",
+      "horario": "16:00"
+    },
+    {
+      "id": 80,
+      "medico_id": 2,
+      "dia_semana": "Sexta",
+      "horario": "17:00"
+    },
+    {
+      "id": 81,
+      "medico_id": 3,
+      "dia_semana": "Segunda",
+      "horario": "08:00"
+    },
+    {
+      "id": 82,
+      "medico_id": 3,
+      "dia_semana": "Segunda",
+      "horario": "09:00"
+    },
+    {
+      "id": 83,
+      "medico_id": 3,
+      "dia_semana": "Segunda",
+      "horario": "10:00"
+    },
+    {
+      "id": 84,
+      "medico_id": 3,
+      "dia_semana": "Segunda",
+      "horario": "11:00"
+    },
+    {
+      "id": 85,
+      "medico_id": 3,
+      "dia_semana": "Segunda",
+      "horario": "14:00"
+    },
+    {
+      "id": 86,
+      "medico_id": 3,
+      "dia_semana": "Segunda",
+      "horario": "15:00"
+    },
+    {
+      "id": 87,
+      "medico_id": 3,
+      "dia_semana": "Segunda",
+      "horario": "16:00"
+    },
+    {
+      "id": 88,
+      "medico_id": 3,
+      "dia_semana": "Segunda",
+      "horario": "17:00"
+    },
+    {
+      "id": 89,
       "medico_id": 3,
       "dia_semana": "Terça",
       "horario": "08:00"
     },
     {
-      "id": 7,
+      "id": 90,
+      "medico_id": 3,
+      "dia_semana": "Terça",
+      "horario": "09:00"
+    },
+    {
+      "id": 91,
+      "medico_id": 3,
+      "dia_semana": "Terça",
+      "horario": "10:00"
+    },
+    {
+      "id": 92,
+      "medico_id": 3,
+      "dia_semana": "Terça",
+      "horario": "11:00"
+    },
+    {
+      "id": 93,
+      "medico_id": 3,
+      "dia_semana": "Terça",
+      "horario": "14:00"
+    },
+    {
+      "id": 94,
+      "medico_id": 3,
+      "dia_semana": "Terça",
+      "horario": "15:00"
+    },
+    {
+      "id": 95,
+      "medico_id": 3,
+      "dia_semana": "Terça",
+      "horario": "16:00"
+    },
+    {
+      "id": 96,
+      "medico_id": 3,
+      "dia_semana": "Terça",
+      "horario": "17:00"
+    },
+    {
+      "id": 97,
+      "medico_id": 3,
+      "dia_semana": "Quarta",
+      "horario": "08:00"
+    },
+    {
+      "id": 98,
+      "medico_id": 3,
+      "dia_semana": "Quarta",
+      "horario": "09:00"
+    },
+    {
+      "id": 99,
+      "medico_id": 3,
+      "dia_semana": "Quarta",
+      "horario": "10:00"
+    },
+    {
+      "id": 100,
+      "medico_id": 3,
+      "dia_semana": "Quarta",
+      "horario": "11:00"
+    },
+    {
+      "id": 101,
+      "medico_id": 3,
+      "dia_semana": "Quarta",
+      "horario": "14:00"
+    },
+    {
+      "id": 102,
+      "medico_id": 3,
+      "dia_semana": "Quarta",
+      "horario": "15:00"
+    },
+    {
+      "id": 103,
+      "medico_id": 3,
+      "dia_semana": "Quarta",
+      "horario": "16:00"
+    },
+    {
+      "id": 104,
+      "medico_id": 3,
+      "dia_semana": "Quarta",
+      "horario": "17:00"
+    },
+    {
+      "id": 105,
+      "medico_id": 3,
+      "dia_semana": "Quinta",
+      "horario": "08:00"
+    },
+    {
+      "id": 106,
+      "medico_id": 3,
+      "dia_semana": "Quinta",
+      "horario": "09:00"
+    },
+    {
+      "id": 107,
+      "medico_id": 3,
+      "dia_semana": "Quinta",
+      "horario": "10:00"
+    },
+    {
+      "id": 108,
       "medico_id": 3,
       "dia_semana": "Quinta",
       "horario": "11:00"
     },
     {
-      "id": 8,
+      "id": 109,
+      "medico_id": 3,
+      "dia_semana": "Quinta",
+      "horario": "14:00"
+    },
+    {
+      "id": 110,
+      "medico_id": 3,
+      "dia_semana": "Quinta",
+      "horario": "15:00"
+    },
+    {
+      "id": 111,
+      "medico_id": 3,
+      "dia_semana": "Quinta",
+      "horario": "16:00"
+    },
+    {
+      "id": 112,
+      "medico_id": 3,
+      "dia_semana": "Quinta",
+      "horario": "17:00"
+    },
+    {
+      "id": 113,
+      "medico_id": 3,
+      "dia_semana": "Sexta",
+      "horario": "08:00"
+    },
+    {
+      "id": 114,
+      "medico_id": 3,
+      "dia_semana": "Sexta",
+      "horario": "09:00"
+    },
+    {
+      "id": 115,
+      "medico_id": 3,
+      "dia_semana": "Sexta",
+      "horario": "10:00"
+    },
+    {
+      "id": 116,
+      "medico_id": 3,
+      "dia_semana": "Sexta",
+      "horario": "11:00"
+    },
+    {
+      "id": 117,
+      "medico_id": 3,
+      "dia_semana": "Sexta",
+      "horario": "14:00"
+    },
+    {
+      "id": 118,
+      "medico_id": 3,
+      "dia_semana": "Sexta",
+      "horario": "15:00"
+    },
+    {
+      "id": 119,
+      "medico_id": 3,
+      "dia_semana": "Sexta",
+      "horario": "16:00"
+    },
+    {
+      "id": 120,
+      "medico_id": 3,
+      "dia_semana": "Sexta",
+      "horario": "17:00"
+    },
+    {
+      "id": 121,
+      "medico_id": 4,
+      "dia_semana": "Segunda",
+      "horario": "08:00"
+    },
+    {
+      "id": 122,
+      "medico_id": 4,
+      "dia_semana": "Segunda",
+      "horario": "09:00"
+    },
+    {
+      "id": 123,
+      "medico_id": 4,
+      "dia_semana": "Segunda",
+      "horario": "10:00"
+    },
+    {
+      "id": 124,
+      "medico_id": 4,
+      "dia_semana": "Segunda",
+      "horario": "11:00"
+    },
+    {
+      "id": 125,
+      "medico_id": 4,
+      "dia_semana": "Segunda",
+      "horario": "14:00"
+    },
+    {
+      "id": 126,
+      "medico_id": 4,
+      "dia_semana": "Segunda",
+      "horario": "15:00"
+    },
+    {
+      "id": 127,
+      "medico_id": 4,
+      "dia_semana": "Segunda",
+      "horario": "16:00"
+    },
+    {
+      "id": 128,
+      "medico_id": 4,
+      "dia_semana": "Segunda",
+      "horario": "17:00"
+    },
+    {
+      "id": 129,
+      "medico_id": 4,
+      "dia_semana": "Terça",
+      "horario": "08:00"
+    },
+    {
+      "id": 130,
+      "medico_id": 4,
+      "dia_semana": "Terça",
+      "horario": "09:00"
+    },
+    {
+      "id": 131,
+      "medico_id": 4,
+      "dia_semana": "Terça",
+      "horario": "10:00"
+    },
+    {
+      "id": 132,
+      "medico_id": 4,
+      "dia_semana": "Terça",
+      "horario": "11:00"
+    },
+    {
+      "id": 133,
+      "medico_id": 4,
+      "dia_semana": "Terça",
+      "horario": "14:00"
+    },
+    {
+      "id": 134,
+      "medico_id": 4,
+      "dia_semana": "Terça",
+      "horario": "15:00"
+    },
+    {
+      "id": 135,
+      "medico_id": 4,
+      "dia_semana": "Terça",
+      "horario": "16:00"
+    },
+    {
+      "id": 136,
+      "medico_id": 4,
+      "dia_semana": "Terça",
+      "horario": "17:00"
+    },
+    {
+      "id": 137,
+      "medico_id": 4,
+      "dia_semana": "Quarta",
+      "horario": "08:00"
+    },
+    {
+      "id": 138,
+      "medico_id": 4,
+      "dia_semana": "Quarta",
+      "horario": "09:00"
+    },
+    {
+      "id": 139,
+      "medico_id": 4,
+      "dia_semana": "Quarta",
+      "horario": "10:00"
+    },
+    {
+      "id": 140,
+      "medico_id": 4,
+      "dia_semana": "Quarta",
+      "horario": "11:00"
+    },
+    {
+      "id": 141,
+      "medico_id": 4,
+      "dia_semana": "Quarta",
+      "horario": "14:00"
+    },
+    {
+      "id": 142,
+      "medico_id": 4,
+      "dia_semana": "Quarta",
+      "horario": "15:00"
+    },
+    {
+      "id": 143,
+      "medico_id": 4,
+      "dia_semana": "Quarta",
+      "horario": "16:00"
+    },
+    {
+      "id": 144,
+      "medico_id": 4,
+      "dia_semana": "Quarta",
+      "horario": "17:00"
+    },
+    {
+      "id": 145,
+      "medico_id": 4,
+      "dia_semana": "Quinta",
+      "horario": "08:00"
+    },
+    {
+      "id": 146,
+      "medico_id": 4,
+      "dia_semana": "Quinta",
+      "horario": "09:00"
+    },
+    {
+      "id": 147,
+      "medico_id": 4,
+      "dia_semana": "Quinta",
+      "horario": "10:00"
+    },
+    {
+      "id": 148,
+      "medico_id": 4,
+      "dia_semana": "Quinta",
+      "horario": "11:00"
+    },
+    {
+      "id": 149,
+      "medico_id": 4,
+      "dia_semana": "Quinta",
+      "horario": "14:00"
+    },
+    {
+      "id": 150,
+      "medico_id": 4,
+      "dia_semana": "Quinta",
+      "horario": "15:00"
+    },
+    {
+      "id": 151,
+      "medico_id": 4,
+      "dia_semana": "Quinta",
+      "horario": "16:00"
+    },
+    {
+      "id": 152,
+      "medico_id": 4,
+      "dia_semana": "Quinta",
+      "horario": "17:00"
+    },
+    {
+      "id": 153,
+      "medico_id": 4,
+      "dia_semana": "Sexta",
+      "horario": "08:00"
+    },
+    {
+      "id": 154,
       "medico_id": 4,
       "dia_semana": "Sexta",
       "horario": "09:00"
     },
     {
-      "id": 9,
+      "id": 155,
+      "medico_id": 4,
+      "dia_semana": "Sexta",
+      "horario": "10:00"
+    },
+    {
+      "id": 156,
+      "medico_id": 4,
+      "dia_semana": "Sexta",
+      "horario": "11:00"
+    },
+    {
+      "id": 157,
+      "medico_id": 4,
+      "dia_semana": "Sexta",
+      "horario": "14:00"
+    },
+    {
+      "id": 158,
+      "medico_id": 4,
+      "dia_semana": "Sexta",
+      "horario": "15:00"
+    },
+    {
+      "id": 159,
+      "medico_id": 4,
+      "dia_semana": "Sexta",
+      "horario": "16:00"
+    },
+    {
+      "id": 160,
+      "medico_id": 4,
+      "dia_semana": "Sexta",
+      "horario": "17:00"
+    },
+    {
+      "id": 161,
+      "medico_id": 5,
+      "dia_semana": "Segunda",
+      "horario": "08:00"
+    },
+    {
+      "id": 162,
+      "medico_id": 5,
+      "dia_semana": "Segunda",
+      "horario": "09:00"
+    },
+    {
+      "id": 163,
+      "medico_id": 5,
+      "dia_semana": "Segunda",
+      "horario": "10:00"
+    },
+    {
+      "id": 164,
+      "medico_id": 5,
+      "dia_semana": "Segunda",
+      "horario": "11:00"
+    },
+    {
+      "id": 165,
+      "medico_id": 5,
+      "dia_semana": "Segunda",
+      "horario": "14:00"
+    },
+    {
+      "id": 166,
+      "medico_id": 5,
+      "dia_semana": "Segunda",
+      "horario": "15:00"
+    },
+    {
+      "id": 167,
+      "medico_id": 5,
+      "dia_semana": "Segunda",
+      "horario": "16:00"
+    },
+    {
+      "id": 168,
+      "medico_id": 5,
+      "dia_semana": "Segunda",
+      "horario": "17:00"
+    },
+    {
+      "id": 169,
+      "medico_id": 5,
+      "dia_semana": "Terça",
+      "horario": "08:00"
+    },
+    {
+      "id": 170,
+      "medico_id": 5,
+      "dia_semana": "Terça",
+      "horario": "09:00"
+    },
+    {
+      "id": 171,
+      "medico_id": 5,
+      "dia_semana": "Terça",
+      "horario": "10:00"
+    },
+    {
+      "id": 172,
+      "medico_id": 5,
+      "dia_semana": "Terça",
+      "horario": "11:00"
+    },
+    {
+      "id": 173,
+      "medico_id": 5,
+      "dia_semana": "Terça",
+      "horario": "14:00"
+    },
+    {
+      "id": 174,
+      "medico_id": 5,
+      "dia_semana": "Terça",
+      "horario": "15:00"
+    },
+    {
+      "id": 175,
+      "medico_id": 5,
+      "dia_semana": "Terça",
+      "horario": "16:00"
+    },
+    {
+      "id": 176,
+      "medico_id": 5,
+      "dia_semana": "Terça",
+      "horario": "17:00"
+    },
+    {
+      "id": 177,
+      "medico_id": 5,
+      "dia_semana": "Quarta",
+      "horario": "08:00"
+    },
+    {
+      "id": 178,
+      "medico_id": 5,
+      "dia_semana": "Quarta",
+      "horario": "09:00"
+    },
+    {
+      "id": 179,
+      "medico_id": 5,
+      "dia_semana": "Quarta",
+      "horario": "10:00"
+    },
+    {
+      "id": 180,
+      "medico_id": 5,
+      "dia_semana": "Quarta",
+      "horario": "11:00"
+    },
+    {
+      "id": 181,
+      "medico_id": 5,
+      "dia_semana": "Quarta",
+      "horario": "14:00"
+    },
+    {
+      "id": 182,
+      "medico_id": 5,
+      "dia_semana": "Quarta",
+      "horario": "15:00"
+    },
+    {
+      "id": 183,
       "medico_id": 5,
       "dia_semana": "Quarta",
       "horario": "16:00"
     },
     {
-      "id": 10,
+      "id": 184,
+      "medico_id": 5,
+      "dia_semana": "Quarta",
+      "horario": "17:00"
+    },
+    {
+      "id": 185,
+      "medico_id": 5,
+      "dia_semana": "Quinta",
+      "horario": "08:00"
+    },
+    {
+      "id": 186,
+      "medico_id": 5,
+      "dia_semana": "Quinta",
+      "horario": "09:00"
+    },
+    {
+      "id": 187,
+      "medico_id": 5,
+      "dia_semana": "Quinta",
+      "horario": "10:00"
+    },
+    {
+      "id": 188,
+      "medico_id": 5,
+      "dia_semana": "Quinta",
+      "horario": "11:00"
+    },
+    {
+      "id": 189,
+      "medico_id": 5,
+      "dia_semana": "Quinta",
+      "horario": "14:00"
+    },
+    {
+      "id": 190,
+      "medico_id": 5,
+      "dia_semana": "Quinta",
+      "horario": "15:00"
+    },
+    {
+      "id": 191,
+      "medico_id": 5,
+      "dia_semana": "Quinta",
+      "horario": "16:00"
+    },
+    {
+      "id": 192,
+      "medico_id": 5,
+      "dia_semana": "Quinta",
+      "horario": "17:00"
+    },
+    {
+      "id": 193,
+      "medico_id": 5,
+      "dia_semana": "Sexta",
+      "horario": "08:00"
+    },
+    {
+      "id": 194,
+      "medico_id": 5,
+      "dia_semana": "Sexta",
+      "horario": "09:00"
+    },
+    {
+      "id": 195,
+      "medico_id": 5,
+      "dia_semana": "Sexta",
+      "horario": "10:00"
+    },
+    {
+      "id": 196,
+      "medico_id": 5,
+      "dia_semana": "Sexta",
+      "horario": "11:00"
+    },
+    {
+      "id": 197,
+      "medico_id": 5,
+      "dia_semana": "Sexta",
+      "horario": "14:00"
+    },
+    {
+      "id": 198,
+      "medico_id": 5,
+      "dia_semana": "Sexta",
+      "horario": "15:00"
+    },
+    {
+      "id": 199,
+      "medico_id": 5,
+      "dia_semana": "Sexta",
+      "horario": "16:00"
+    },
+    {
+      "id": 200,
+      "medico_id": 5,
+      "dia_semana": "Sexta",
+      "horario": "17:00"
+    },
+    {
+      "id": 201,
+      "medico_id": 6,
+      "dia_semana": "Segunda",
+      "horario": "08:00"
+    },
+    {
+      "id": 202,
+      "medico_id": 6,
+      "dia_semana": "Segunda",
+      "horario": "09:00"
+    },
+    {
+      "id": 203,
+      "medico_id": 6,
+      "dia_semana": "Segunda",
+      "horario": "10:00"
+    },
+    {
+      "id": 204,
+      "medico_id": 6,
+      "dia_semana": "Segunda",
+      "horario": "11:00"
+    },
+    {
+      "id": 205,
+      "medico_id": 6,
+      "dia_semana": "Segunda",
+      "horario": "14:00"
+    },
+    {
+      "id": 206,
+      "medico_id": 6,
+      "dia_semana": "Segunda",
+      "horario": "15:00"
+    },
+    {
+      "id": 207,
+      "medico_id": 6,
+      "dia_semana": "Segunda",
+      "horario": "16:00"
+    },
+    {
+      "id": 208,
+      "medico_id": 6,
+      "dia_semana": "Segunda",
+      "horario": "17:00"
+    },
+    {
+      "id": 209,
+      "medico_id": 6,
+      "dia_semana": "Terça",
+      "horario": "08:00"
+    },
+    {
+      "id": 210,
+      "medico_id": 6,
+      "dia_semana": "Terça",
+      "horario": "09:00"
+    },
+    {
+      "id": 211,
+      "medico_id": 6,
+      "dia_semana": "Terça",
+      "horario": "10:00"
+    },
+    {
+      "id": 212,
+      "medico_id": 6,
+      "dia_semana": "Terça",
+      "horario": "11:00"
+    },
+    {
+      "id": 213,
+      "medico_id": 6,
+      "dia_semana": "Terça",
+      "horario": "14:00"
+    },
+    {
+      "id": 214,
+      "medico_id": 6,
+      "dia_semana": "Terça",
+      "horario": "15:00"
+    },
+    {
+      "id": 215,
+      "medico_id": 6,
+      "dia_semana": "Terça",
+      "horario": "16:00"
+    },
+    {
+      "id": 216,
+      "medico_id": 6,
+      "dia_semana": "Terça",
+      "horario": "17:00"
+    },
+    {
+      "id": 217,
+      "medico_id": 6,
+      "dia_semana": "Quarta",
+      "horario": "08:00"
+    },
+    {
+      "id": 218,
+      "medico_id": 6,
+      "dia_semana": "Quarta",
+      "horario": "09:00"
+    },
+    {
+      "id": 219,
+      "medico_id": 6,
+      "dia_semana": "Quarta",
+      "horario": "10:00"
+    },
+    {
+      "id": 220,
+      "medico_id": 6,
+      "dia_semana": "Quarta",
+      "horario": "11:00"
+    },
+    {
+      "id": 221,
+      "medico_id": 6,
+      "dia_semana": "Quarta",
+      "horario": "14:00"
+    },
+    {
+      "id": 222,
+      "medico_id": 6,
+      "dia_semana": "Quarta",
+      "horario": "15:00"
+    },
+    {
+      "id": 223,
+      "medico_id": 6,
+      "dia_semana": "Quarta",
+      "horario": "16:00"
+    },
+    {
+      "id": 224,
+      "medico_id": 6,
+      "dia_semana": "Quarta",
+      "horario": "17:00"
+    },
+    {
+      "id": 225,
       "medico_id": 6,
       "dia_semana": "Quinta",
-      "horario": "13:00"
+      "horario": "08:00"
+    },
+    {
+      "id": 226,
+      "medico_id": 6,
+      "dia_semana": "Quinta",
+      "horario": "09:00"
+    },
+    {
+      "id": 227,
+      "medico_id": 6,
+      "dia_semana": "Quinta",
+      "horario": "10:00"
+    },
+    {
+      "id": 228,
+      "medico_id": 6,
+      "dia_semana": "Quinta",
+      "horario": "11:00"
+    },
+    {
+      "id": 229,
+      "medico_id": 6,
+      "dia_semana": "Quinta",
+      "horario": "14:00"
+    },
+    {
+      "id": 230,
+      "medico_id": 6,
+      "dia_semana": "Quinta",
+      "horario": "15:00"
+    },
+    {
+      "id": 231,
+      "medico_id": 6,
+      "dia_semana": "Quinta",
+      "horario": "16:00"
+    },
+    {
+      "id": 232,
+      "medico_id": 6,
+      "dia_semana": "Quinta",
+      "horario": "17:00"
+    },
+    {
+      "id": 233,
+      "medico_id": 6,
+      "dia_semana": "Sexta",
+      "horario": "08:00"
+    },
+    {
+      "id": 234,
+      "medico_id": 6,
+      "dia_semana": "Sexta",
+      "horario": "09:00"
+    },
+    {
+      "id": 235,
+      "medico_id": 6,
+      "dia_semana": "Sexta",
+      "horario": "10:00"
+    },
+    {
+      "id": 236,
+      "medico_id": 6,
+      "dia_semana": "Sexta",
+      "horario": "11:00"
+    },
+    {
+      "id": 237,
+      "medico_id": 6,
+      "dia_semana": "Sexta",
+      "horario": "14:00"
+    },
+    {
+      "id": 238,
+      "medico_id": 6,
+      "dia_semana": "Sexta",
+      "horario": "15:00"
+    },
+    {
+      "id": 239,
+      "medico_id": 6,
+      "dia_semana": "Sexta",
+      "horario": "16:00"
+    },
+    {
+      "id": 240,
+      "medico_id": 6,
+      "dia_semana": "Sexta",
+      "horario": "17:00"
     }
   ],
   "consultas": [
@@ -148,6 +1528,15 @@
       "status": "Agendado",
       "observacoes": "",
       "id": 3
+    },
+    {
+      "paciente_id": 2,
+      "medico_id": 4,
+      "data": "2026-10-09",
+      "hora": "09:00",
+      "status": "Agendado",
+      "observacoes": "Irei chegar as 09:10",
+      "id": 4
     }
   ]
 }

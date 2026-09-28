@@ -4,6 +4,7 @@ import MedicoCard from "../components/MedicoCard";
 import EstadoCarregamento from "../components/EstadoCarregamento";
 import Botao from "../components/Botao";
 import { buscarMedico, buscarHorariosDoMedico } from "../services/clinicaApi";
+import { agruparPorDia } from "../utils/agenda";
 
 function MedicoDetalhe() {
   const { id } = useParams();
@@ -59,14 +60,14 @@ function MedicoDetalhe() {
             <thead>
               <tr>
                 <th>Dia da semana</th>
-                <th>Horário</th>
+                <th>Horários</th>
               </tr>
             </thead>
             <tbody>
-              {horarios.map((horario) => (
-                <tr key={horario.id}>
-                  <td>{horario.dia_semana}</td>
-                  <td>{horario.horario}</td>
+              {agruparPorDia(horarios).map(({ dia, horarios: horariosDoDia }) => (
+                <tr key={dia}>
+                  <td>{dia}</td>
+                  <td>{horariosDoDia.join(", ")}</td>
                 </tr>
               ))}
             </tbody>

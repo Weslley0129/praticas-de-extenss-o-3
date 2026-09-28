@@ -4,6 +4,7 @@ import Botao from "../components/Botao";
 import MedicoCard from "../components/MedicoCard";
 import EstadoCarregamento from "../components/EstadoCarregamento";
 import { useAuth } from "../context/AuthContext";
+import { resumirAgendaSemanal } from "../utils/agenda";
 import {
   buscarEspecialidades,
   buscarMedicos,
@@ -189,10 +190,7 @@ function Agendar() {
 
           {horariosFixos.length > 0 && (
             <p className="agendar__dica-dias">
-              Esse médico atende: {" "}
-              {horariosFixos
-                .map((h) => `${h.dia_semana} às ${h.horario}`)
-                .join(" · ")}
+              Esse médico atende: {resumirAgendaSemanal(horariosFixos)}
             </p>
           )}
 
