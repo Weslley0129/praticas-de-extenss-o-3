@@ -5,11 +5,10 @@
   gap: 10px;
   padding: 40px 28px 32px;
   border-radius: 20px;
-  background: radial-gradient(circle at 20% 15%, var(--brand-de), transparent 60%),
-    linear-gradient(160deg, var(--brand-de) 0%, var(--brand-para) 100%);
-  color: #ffffff;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
   text-align: center;
-  box-shadow: 0 20px 40px -20px rgba(194, 67, 30, 0.5);
 }
 
 .tela-login__marca {
@@ -24,27 +23,28 @@
   font-weight: 700;
   font-size: 1.6rem;
   padding: 8px 22px;
-  border: 1.5px solid rgba(255, 255, 255, 0.75);
+  border: 1.5px solid var(--border);
   border-radius: 10px;
+  color: var(--text);
 }
 
 .tela-login__subtitulo {
   margin: 6px 0 4px;
   font-weight: 700;
   letter-spacing: 0.02em;
-  opacity: 0.95;
+  color: var(--text-muted);
 }
 
 .tela-login__pill {
   margin: 10px 0 6px;
   padding: 8px 22px;
-  border: 1.5px solid rgba(255, 255, 255, 0.8);
+  border: 1.5px solid color-mix(in srgb, var(--accent) 35%, transparent);
   border-radius: 999px;
   font-weight: 700;
   font-size: 0.85rem;
   letter-spacing: 0.03em;
-  color: #142850;
-  background: rgba(255, 255, 255, 0.92);
+  color: var(--accent-strong);
+  background: var(--info-bg);
 }
 
 .tela-login__form {
@@ -67,20 +67,20 @@
 .tela-login__campo label {
   font-size: 0.78rem;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.95);
+  color: var(--text-muted);
 }
 
 .tela-login__campo input {
   font: inherit;
   padding: 9px 12px;
   border-radius: 8px;
-  border: 1.5px solid rgba(20, 20, 40, 0.65);
-  background: rgba(255, 255, 255, 0.92);
-  color: #16232a;
+  border: 1.5px solid var(--border);
+  background: var(--surface-alt);
+  color: var(--text);
 }
 
 .tela-login__campo input:focus {
-  outline: 2px solid #2255cc;
+  outline: 2px solid var(--accent);
   outline-offset: 1px;
 }
 
@@ -88,7 +88,7 @@
   align-self: center;
   background: none;
   border: none;
-  color: #dceaff;
+  color: var(--accent-strong);
   font-size: 0.82rem;
   font-weight: 600;
   text-decoration: underline;
@@ -99,8 +99,9 @@
 .tela-login__aviso {
   margin: -6px 0 0;
   font-size: 0.78rem;
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: var(--warn-bg);
+  border: 1px solid var(--warn-border);
+  color: var(--warn);
   border-radius: 8px;
   padding: 8px 10px;
   text-align: left;
@@ -116,9 +117,8 @@
   border-radius: 999px;
   border: none;
   background: var(--accent);
-  color: #ffffff;
+  color: var(--accent-contrast);
   cursor: pointer;
-  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.4);
 }
 
 .tela-login__entrar:hover:not(:disabled) {
@@ -133,21 +133,22 @@
 .tela-login__cadastro {
   font-size: 0.85rem;
   margin: 4px 0 0;
+  color: var(--text-muted);
 }
 
 .tela-login__cadastro a {
-  color: #ffffff;
+  color: var(--accent-strong);
   font-weight: 700;
 }
 
 .tela-login__teste {
   font-size: 0.72rem;
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--text-muted);
   margin: 0;
 }
 
 .tela-login__teste code {
-  background: rgba(255, 255, 255, 0.2);
-  color: #ffffff;
-  border: none;
+  background: var(--surface-alt);
+  color: var(--text);
+  border: 1px solid var(--border);
 }
