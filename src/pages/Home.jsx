@@ -26,17 +26,6 @@ function Home() {
         <StatCard rotulo="Horários por semana" valor="10" />
         <StatCard rotulo="Disponibilidade" valor="24/7" />
       </div>
-
-      <section className="cartao">
-        <h2>Por que essa evolução?</h2>
-        <p>
-          A versão anterior do sistema renderizava as páginas no servidor (Flask + Jinja2), com
-          JavaScript solto para chamar a API. Esta versão em React organiza a interface em
-          componentes reutilizáveis, gerencia o estado do usuário logado de forma centralizada e usa
-          o React Router para navegar sem recarregar a página — mantendo a mesma API REST do
-          backend como fonte de dados.
-        </p>
-      </section>
     </div>
   );
 }
