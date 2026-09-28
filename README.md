@@ -63,3 +63,73 @@ src/
 | Integração com API pública | página `/api-publica` (JSONPlaceholder) |
 | Análise de usabilidade | PDF, seção 7 |
 | React Router | todas as rotas da aplicação (ver PDF, seção 8) |
+
+## Testes de componentes (Atividade 3)
+
+```bash
+npm test              # roda toda a suíte uma vez
+npm run test:watch    # modo interativo (re-roda ao salvar)
+npm run test:coverage # roda a suíte e gera o relatório de cobertura
+```
+
+Stack de testes: **Vitest** (test runner, integrado ao Vite — mesma API do
+Jest) + **React Testing Library** + `@testing-library/user-event`, conforme
+pedido no requisito ("React Testing Library").
+
+### O que é testado
+
+```
+tests/
+├── components/
+│   ├── Botao.test.jsx            → renderização, clique, estado disabled, variante
+│   ├── StatCard.test.jsx         → renderização de props
+│   ├── EstadoCarregamento.test.jsx → renderização condicional (spinner vs. erro)
+│   ├── MedicoCard.test.jsx        → props + children (composição) + link gerado
+│   ├── Navbar.test.jsx            → estado logado/deslogado, menu mobile
+│   └── RotaProtegida.test.jsx     → lógica de redirecionamento (login/tipo de usuário)
+├── pages/
+│   ├── Contador.test.jsx          → interações de clique (useState)
+│   ├── Login.test.jsx             → digitação, submit, API mockada, navegação
+│   └── Medicos.test.jsx           → composição, API mockada, filtro por clique
+├── testUtils.jsx                  → helper que envolve com Router + AuthProvider
+└── setupTests.js
+```
+
+Os testes seguem a orientação do requisito de **testar o comportamento do
+usuário, não a implementação**: interagem via `userEvent` (clique, digitação)
+e verificam o que aparece na tela (`screen.getByRole`, `getByText`), nunca o
+estado interno dos componentes. `services/clinicaApi.js` é sempre mockado
+com `vi.mock(...)` — nenhum teste de componente depende da API rodando de
+verdade.
+
+### Cobertura de código
+
+```
+Statements : 24,23% (95/392) — mas nos arquivos com teste, entre 65% e 96%
+Branches   : 25,68%
+Functions  : 26,27%
+Lines      : 25,07%
+```
+
+O enunciado exige cobertura mínima de 80% **no back-end**
+(`clique-saude-api`, que atinge 96%); para o front-end não há um número
+mínimo definido. Priorizei profundidade nos componentes mais reutilizados e
+mais ricos em interação/lógica condicional (`Botao`, `MedicoCard`,
+`RotaProtegida`, `Contador`, `Login`, `Medicos`) em vez de cobertura
+superficial de todas as 11 páginas — em especial o wizard `Agendar.jsx`
+(4 etapas, ~270 linhas) e os painéis `Admin`/`Dashboard` ficaram de fora
+desta rodada por limite de tempo; são o próximo passo natural de expansão
+da suíte.
+
+## CI/CD (GitHub Actions)
+
+Arquivo: [`.github/workflows/ci.yml`](.github/workflows/ci.yml). Roda a cada
+push/PR para `main`, em 3 jobs encadeados:
+
+1. **test** — `npm ci`, roda `npm run test:coverage` e publica a pasta
+   `coverage/` como artefato do workflow.
+2. **build** — `npm run build` (Vite) e publica `dist/` como artefato.
+3. **deploy** (opcional, **desativado por padrão** — `if: false`) — dispara
+   um deploy hook (ex: Vercel/Netlify) usando um secret do repositório. Para
+   ativar: configure `VERCEL_DEPLOY_HOOK_URL` nos secrets do GitHub e troque
+   a condição do job para `if: github.ref == 'refs/heads/main'`.

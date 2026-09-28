@@ -1,0 +1,78 @@
+name: CI/CD — Clique Saúde (front-end)
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    name: Instalar, testar e medir cobertura
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar o código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Rodar testes de componentes com cobertura
+        run: npm run test:coverage
+
+      - name: Publicar relatório de cobertura como artefato
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cobertura-frontend
+          path: coverage/
+          retention-days: 15
+
+  build:
+    name: Build (Vite)
+    needs: test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar o código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Build de produção
+        run: npm run build
+
+      - name: Publicar a build como artefato
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-frontend
+          path: dist/
+          retention-days: 15
+
+  # Deploy automático para staging — desativado por padrão (sem hosting
+  # provisionado para este projeto de estudo). Para habilitar: crie o secret
+  # VERCEL_DEPLOY_HOOK_URL (ou equivalente do seu provedor) e troque
+  # "if: false" para "if: github.ref == 'refs/heads/main'".
+  deploy:
+    name: Deploy (staging) — opcional
+    needs: build
+    runs-on: ubuntu-latest
+    if: false
+
+    steps:
+      - name: Disparar deploy (Vercel/Netlify)
+        run: curl -fsSL "${{ secrets.VERCEL_DEPLOY_HOOK_URL }}"
